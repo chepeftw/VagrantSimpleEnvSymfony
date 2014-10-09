@@ -11,6 +11,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "ubuntu/trusty64"
+  
+  # For FIT purposes we have the VM at this location, for further testing you can comment this line and it will automatically download it from VagrantCloud
+  config.vm.box_url = "http://fit.galileo.edu/virtualbox.box"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
